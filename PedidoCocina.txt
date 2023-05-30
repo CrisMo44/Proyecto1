@@ -1,0 +1,25 @@
+
+Pedido#1
+Comida: Casado de carne
+Bebida: Tamarindo
+Detalles de comida: sin ensalada verde
+Detalles de bebida: con poca azucar
+  
+Pedido#2
+Comida: Sopa
+Bebida: CocaCola
+Detalles de comida: sin verduras
+Detalles de bebida: tipo zero
+  
+Pedido#1
+Comida: Casado de carne
+Bebida: Tamarindo
+Detalles de comida: todo completo
+Detalles de bebida: normal
+  
+Pedido#1
+Comida: Arroz con camarones
+Bebida: Chan
+Detalles de comida: sin ensalada
+Detalles de bebida: Poco azucar
+  
