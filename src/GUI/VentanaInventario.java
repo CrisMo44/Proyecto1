@@ -7,7 +7,7 @@ package GUI;
 
 /**
  *
- * @author unicomer
+ * @author victorvf
  */
 public class VentanaInventario extends javax.swing.JFrame {
 

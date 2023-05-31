@@ -1,25 +1,189 @@
-
-Pedido#1
-Comida: Casado de carne
-Bebida: Tamarindo
-Detalles de comida: sin ensalada verde
-Detalles de bebida: con poca azucar
-  
-Pedido#2
+Pedido#3
 Comida: Sopa
-Bebida: CocaCola
-Detalles de comida: sin verduras
-Detalles de bebida: tipo zero
-  
-Pedido#1
-Comida: Casado de carne
 Bebida: Tamarindo
-Detalles de comida: todo completo
-Detalles de bebida: normal
+Detalles de comida: Solo carne 
+Detalles de bebida: poco azucar
+Numero de mesa: Mesa3
   
-Pedido#1
-Comida: Arroz con camarones
+Pedido#4
+Comida: Casado de carne
+Bebida: CocaCola
+Detalles de comida: asdasd
+Detalles de bebida: asdasd
+Numero de mesa: Mesa4
+  
+Pedido#5
+Comida: Casado de carne
+Bebida: CocaCola
+Detalles de comida: asdasd
+Detalles de bebida: asdasd
+Numero de mesa: Mesa4
+  
+Pedido#6
+Comida: Casado de carne
+Bebida: Batido de Mango
+Detalles de comida: Sin ensalada verde
+Detalles de bebida: poco azucar
+Numero de mesa: Mesa4
+  
+Pedido#7
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdsad
+Detalles de bebida: asdasdasd
+Numero de mesa: Mesa3
+  
+Pedido#8
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: sadsd
+Detalles de bebida: asdasd
+Numero de mesa: Mesa3
+  
+Pedido#9
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: sdasds
+Detalles de bebida: asdasdas
+Numero de mesa: Mesa4
+  
+Pedido#10
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasd
+Detalles de bebida: asdasdasd
+Numero de mesa: Mesa6
+  
+Pedido#11
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasdasd
+Detalles de bebida: asdasdasdas
+Numero de mesa: Mesa3
+  
+Pedido#12
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasd
+Detalles de bebida: asdasdas
+Numero de mesa: Mesa4
+  
+Pedido#13
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasd
+Detalles de bebida: asd
+Numero de mesa: Mesa4
+  
+Pedido#14
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: as
+Detalles de bebida: ssssssss
+Numero de mesa: Mesa5
+  
+Pedido#15
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: assss
+Detalles de bebida: ddddd
+Numero de mesa: Mesa5
+  
+Pedido#16
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asssss
+Detalles de bebida: dddeeee
+Numero de mesa: Mesa2
+  
+Pedido#17
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasd
+Detalles de bebida: asdasd
+Numero de mesa: Mesa5
+  
+Pedido#18
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasd
+Detalles de bebida: asdasdasd
+Numero de mesa: Mesa4
+  
+Pedido#19
+Comida: Pollo
 Bebida: Chan
-Detalles de comida: sin ensalada
-Detalles de bebida: Poco azucar
+Detalles de comida: asdaaa
+Detalles de bebida: sseeeeww
+Numero de mesa: Mesa7
+  
+Pedido#20
+Comida: Pollo
+Bebida: CocaCola
+Detalles de comida: asdasda
+Detalles de bebida: asdasd
+Numero de mesa: Mesa2
+  
+Pedido#21
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdas
+Detalles de bebida: ssas
+Numero de mesa: Mesa3
+  
+Pedido#22
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: asdasdas
+Detalles de bebida: 
+Numero de mesa: Mesa4
+  
+Pedido#23
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa3
+  
+Pedido#24
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: aaaaa
+Detalles de bebida: 2222wwww
+Numero de mesa: Mesa3
+  
+Pedido#25
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa7
+  
+Pedido#26
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa1
+  
+Pedido#27
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa1
+  
+Pedido#28
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa2
+  
+Pedido#29
+Comida: Sopa
+Bebida: Batido de Mango
+Detalles de comida: 
+Detalles de bebida: 
+Numero de mesa: Mesa5
   

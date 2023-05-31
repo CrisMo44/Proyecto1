@@ -7,7 +7,7 @@ package posprogra2;
 
 /**
  *
- * @author unicomer
+ * @author victorvf
  */
 public class Usuarios {
     private String usuario;

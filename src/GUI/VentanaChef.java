@@ -7,7 +7,7 @@ package GUI;
 
 /**
  *
- * @author unicomer
+ * @author victorvf
  */
 public class VentanaChef extends javax.swing.JFrame {
 

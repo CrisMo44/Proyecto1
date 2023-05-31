@@ -13,13 +13,13 @@ import posprogra2.Usuarios;
 
 /**
  *
- * @author unicomer
+ * @author victorvf
  */
 public class VentanaIni extends javax.swing.JFrame {
     VentanaAdmin VerAd = new VentanaAdmin();
     ArrayList<Usuarios> LiUsuarios = new ArrayList<>();
     boolean LoginCom = false;
-    VentanaMesero VerMe = new VentanaMesero();
+    VentanaMeseroPed VerMe = new VentanaMeseroPed();
 
     /**
      * Creates new form VentanaIni
@@ -133,7 +133,7 @@ public class VentanaIni extends javax.swing.JFrame {
         // TODO add your handling code here:´
         String Usuario = NomUsuario.getText();
         String contra = PassUsuario.getText();
-        
+        String Puesto = "";
         
         File Txt = new File("Usuarios.txt");
         Scanner SC;

@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaMeseroPed.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaIni.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaMeseroMe.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaInventario.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaAdmin.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/posprogra2/POSProgra2.java</file>
+            <file>file:/Users/victorvf/NetBeansProjects/POSProgra2/src/GUI/VentanaChef.java</file>
+        </group>
     </open-files>
 </project-private>

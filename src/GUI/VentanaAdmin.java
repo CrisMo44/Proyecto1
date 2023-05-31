@@ -7,7 +7,7 @@ package GUI;
 
 /**
  *
- * @author unicomer
+ * @author victorvf
  */
 public class VentanaAdmin extends javax.swing.JFrame {
     VentanaInventario Ver = new VentanaInventario();
