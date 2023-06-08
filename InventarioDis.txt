@@ -1,0 +1,5 @@
+Lechuga: -7
+Repollo: 5
+Tomate: 8
+Cebolla: 3
+Chile: 3

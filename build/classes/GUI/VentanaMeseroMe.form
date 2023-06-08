@@ -24,32 +24,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-              <Component id="Mesa3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Component id="Mesa1" min="-2" pref="70" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="Mesa4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-              <Component id="Mesa1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="Mesa2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-              <Component id="Mesa5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="Mesa6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-              <Component id="Mesa7" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="Mesa8" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+              <Component id="Mesa2" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -59,7 +38,7 @@
                   <Component id="jLabel10" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                   <Component id="jLabel11" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="143" max="32767" attributes="0"/>
+              <EmptySpace pref="103" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel12" alignment="1" min="-2" pref="155" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="1" min="-2" pref="155" max="-2" attributes="0"/>
@@ -72,9 +51,30 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="CmbNmesasO" min="-2" pref="140" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <Component id="ButtonLibMesa" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="BtnAtras" min="-2" pref="92" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <Component id="Mesa7" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="Mesa8" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <Component id="Mesa5" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="Mesa6" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <Component id="Mesa3" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="Mesa4" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -83,8 +83,8 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Mesa2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Mesa1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Mesa2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -93,8 +93,8 @@
               </Group>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Mesa4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Mesa3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Mesa4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -103,8 +103,8 @@
               </Group>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Mesa6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Mesa5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Mesa6" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -126,7 +126,7 @@
                   <Component id="BtnAtras" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="CmbNmesasO" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ButtonLibMesa" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -138,7 +138,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -146,7 +146,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel4"/>
       </Properties>
@@ -154,7 +154,7 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel4"/>
       </Properties>
@@ -162,7 +162,7 @@
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel4"/>
       </Properties>
@@ -170,7 +170,7 @@
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -178,7 +178,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -186,7 +186,7 @@
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -194,7 +194,7 @@
     <Component class="javax.swing.JLabel" name="jLabel12">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/victorvf/NetBeansProjects/POSProgra2/IconMesas.png"/>
+          <Image iconType="2" name="C:\Users\unicomer\OneDrive\Documentos\NetBeansProjects\POSProgra2\IconMesas.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -209,42 +209,51 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel13"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M8"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel14"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M7"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel15"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M6"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel16"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M5"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel17"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M4"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel18"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M3"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel19"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M2"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Mesa1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel20"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="M1"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="CmbNmesasO">
@@ -262,10 +271,13 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="ButtonLibMesa">
       <Properties>
         <Property name="text" type="java.lang.String" value="Liberar mesa"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonLibMesaActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

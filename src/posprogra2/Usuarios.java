@@ -7,8 +7,13 @@ package posprogra2;
 
 /**
  *
- * @author victorvf
+ * @author unicomer
  */
+
+/**
+ * Esta clase guarda los datos del usuario para realizar el inicio de sesion 
+ */
+
 public class Usuarios {
     private String usuario;
     private String contra;

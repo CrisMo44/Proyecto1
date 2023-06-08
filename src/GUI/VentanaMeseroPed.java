@@ -21,12 +21,15 @@ import java.util.prefs.Preferences;
 import javax.swing.JOptionPane;
 /**
  *
- * @author victorvf
+ * @author unicomer
  */
 public class VentanaMeseroPed extends javax.swing.JFrame {
     
+    VentanaPago VerPa = new VentanaPago();
     VentanaMeseroMe VerMe = new VentanaMeseroMe();
     private int contadorPedidos = 0;
+    private boolean ApPed = true;
+    private String mesaSeleccionada;
     
     /**
      * Creates new form VentanaEmpleado
@@ -95,6 +98,7 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
         ConfirmPed = new javax.swing.JTextArea();
         Vmesas = new javax.swing.JButton();
         CmbNmesasD = new javax.swing.JComboBox<>();
+        BtnPagar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -140,6 +144,13 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
 
         CmbNmesasD.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        BtnPagar.setText("Pago");
+        BtnPagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPagarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -159,6 +170,7 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(BtnPagar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Vmesas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(EnvPedido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addContainerGap())
@@ -185,8 +197,10 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
                         .addComponent(Vmesas))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CmbNmesasD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CmbNmesasD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnPagar))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         pack();
@@ -200,15 +214,24 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_PedidoCoMouseClicked
-
+/**
+ * Este metodo escribe el numero de pedido con su descripcion en el txt de pedidos y registro de pedidos 
+ */
     private void EnvPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnvPedidoActionPerformed
-        // TODO add your handling code here: 
+        // TODO add your handling code here:
+        try {
+        eliminarMesaSeleDis();
+        
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    if(ApPed){
     contadorPedidos++;
     String ComidaSelec = PedidoCo.getSelectedItem().toString();
     String BebidaSelec = PedidoBeb.getSelectedItem().toString();
     String DeComida = ModComida.getText();
     String DeBebida = ModBebida.getText();
-    String NmesaSelec = CmbNmesasD.getSelectedItem().toString();
+    String NmesaSelec = mesaSeleccionada;
  
 
     String contenido = "Pedido#"+ contadorPedidos + 
@@ -218,10 +241,11 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
                        "\nDetalles de bebida: " + DeBebida +
                        "\nNumero de mesa: "+ NmesaSelec +
                        "\n  ";
-    String archivoSalida = "PedidoCocina.txt";
+    String archivoCocina = "PedidoCocina.txt";
+    String archivoRegistro ="RegistroPed.txt";
 
     try {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(archivoSalida, true)); 
+        BufferedWriter writer = new BufferedWriter(new FileWriter(archivoCocina, true)); 
         writer.write(contenido);
         writer.newLine();
         writer.close();
@@ -230,47 +254,98 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
     } catch (Exception e) {
         e.printStackTrace();
     }
-       try {
-        eliminarMesaSeleccionada();
-        
-    } catch (IOException e) {
+    
+     try {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(archivoRegistro, true)); 
+        writer.write(contenido);
+        writer.newLine();
+        writer.close();
+           
+    } catch (Exception e) {
         e.printStackTrace();
     }
     
     guardarEstConta();
+    
+    
+    String NumPed = "Pedido# " + contadorPedidos;
+    String NumMe = NmesaSelec;
+    VerMe.setNumeroPedido(NumPed,NumMe);
+        System.out.println(NumPed + NumMe);
+    
+    
     }//GEN-LAST:event_EnvPedidoActionPerformed
-
+    }
+/**
+ * Este metodo muestra la ventana de las mesas 
+ */
     private void VmesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VmesasActionPerformed
         // TODO add your handling code here:
         VerMe.setVisible(true);
+        setVisible(false);
         
     }//GEN-LAST:event_VmesasActionPerformed
-    private void cargarEstConta() {
+/**
+ * Este metodo muestra la ventana de pago
+ */
+    private void BtnPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPagarActionPerformed
+        // TODO add your handling code here:
+        VerPa.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_BtnPagarActionPerformed
+/**
+ * Este metodo carga el estado del contador de los pedidos 
+ */
+    public void cargarEstConta() {
         Preferences Pre = Preferences.userNodeForPackage(VentanaMeseroPed.class);
         contadorPedidos = Pre.getInt("contadorPedidos", 0);
     }
-
-    private void guardarEstConta() {
+/**
+ * Este metodo guarda el estado del contador de los pedidos 
+ */
+    public void guardarEstConta() {
         Preferences Pre = Preferences.userNodeForPackage(VentanaMeseroPed.class);
         Pre.putInt("contadorPedidos",contadorPedidos);
     }
     
-     private void ReadMesasDisponibles() throws IOException {
-        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
-        BufferedReader br = new BufferedReader(new FileReader("NmesasDis.txt"));
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] values = line.split(",");
-            for (String value : values) {
-                model.addElement(value);
-            }
+/**
+ * Este metodo reinicia el estado del contador de los pedidos 
+ */
+    public void reiniciarContadorPedidos() {
+    int ResetConta = 0;
+    contadorPedidos = ResetConta;
+    guardarEstConta(); 
+}
+    
+/**
+ * Este metodo lee el txt de las mesas disponibles 
+ */
+     public void ReadMesasDisponibles() throws IOException {
+        try {
+        
+        File archivoOcu = new File("NmesasDis.txt");
+        BufferedReader br = new BufferedReader(new FileReader(archivoOcu));
+
+        
+        List<String> mesasDisponibles = new ArrayList<>();
+        String linea;
+        while ((linea = br.readLine()) != null) {
+            mesasDisponibles.add(linea);
         }
         br.close();
+
+        
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(mesasDisponibles.toArray(new String[0]));
         CmbNmesasD.setModel(model);
+    } catch (IOException e) {
+        e.printStackTrace();
     }
-     
-    private void eliminarMesaSeleccionada() throws IOException {
-    String mesaSeleccionada = CmbNmesasD.getSelectedItem().toString();
+    }
+/**
+ * Este metodo elimina la mesa seleccionada en el combobox de mesas disponibles
+ */  
+    public void eliminarMesaSeleDis() throws IOException {
+    mesaSeleccionada = CmbNmesasD.getSelectedItem().toString();
 
     
     File archivoOcu = new File("NmesasOcu.txt");
@@ -287,6 +362,7 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
 
     if (mesaExistente) {
         JOptionPane.showMessageDialog(null,"La mesa seleccionada ya está ocupada");
+        ApPed = false;
         return;
     }
 
@@ -317,7 +393,7 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
 
     ReadMesasDisponibles();
 }
-
+    
     /**
      * @param args the command line arguments
      */
@@ -362,6 +438,7 @@ public class VentanaMeseroPed extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnPagar;
     private javax.swing.JComboBox<String> CmbNmesasD;
     private javax.swing.JTextArea ConfirmPed;
     private javax.swing.JButton EnvPedido;

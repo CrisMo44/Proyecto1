@@ -7,7 +7,7 @@ package posprogra2;
 import GUI.VentanaIni;
 /**
  *
- * @author victorvf
+ * @author unicomer
  */
 public class POSProgra2 {
 

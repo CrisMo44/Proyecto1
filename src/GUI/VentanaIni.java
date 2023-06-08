@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package GUI;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -13,13 +14,15 @@ import posprogra2.Usuarios;
 
 /**
  *
- * @author victorvf
+ * @author unicomer
  */
 public class VentanaIni extends javax.swing.JFrame {
+
     VentanaAdmin VerAd = new VentanaAdmin();
     ArrayList<Usuarios> LiUsuarios = new ArrayList<>();
     boolean LoginCom = false;
     VentanaMeseroPed VerMe = new VentanaMeseroPed();
+    VentanaChef VerCh = new VentanaChef();
 
     /**
      * Creates new form VentanaIni
@@ -128,55 +131,60 @@ public class VentanaIni extends javax.swing.JFrame {
     private void PassUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PassUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PassUsuarioActionPerformed
-
+/**
+ * Este metodo hace la validacion si el usuario y contraseña ingresado existe en el txt de usuarios 
+ */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:´
         String Usuario = NomUsuario.getText();
         String contra = PassUsuario.getText();
-        String Puesto = "";
         
+
         File Txt = new File("Usuarios.txt");
         Scanner SC;
-        try{
-        SC = new Scanner(Txt);
+        try {
+            SC = new Scanner(Txt);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return;
         }
-        catch(FileNotFoundException e){
-        e.printStackTrace();
-        return;
-        }
-        
-        
-        while(SC.hasNextLine()){
+
+        while (SC.hasNextLine()) {
             String linea = SC.nextLine();
             String[] datos = linea.split(",");
-            
-            Usuarios usuarioAdd = new Usuarios (datos[0],datos[1]);
+
+            Usuarios usuarioAdd = new Usuarios(datos[0], datos[1]);
             LiUsuarios.add(usuarioAdd);
-            
+
         }
         SC.close();
-        
-        for(Usuarios usuarioAdd : LiUsuarios){
-            if(usuarioAdd.getUsuario().equals(Usuario) && usuarioAdd.getContra().equals(contra)){
-            LoginCom = true;
-            if (usuarioAdd.getUsuario().startsWith("Admin")) {
-VerAd.setVisible(true);
-}
-            if (usuarioAdd.getUsuario().startsWith("Mesero")) {
-VerMe.setVisible(true);
-}
-            break;
+
+        for (Usuarios usuarioAdd : LiUsuarios) {
+            if (usuarioAdd.getUsuario().equals(Usuario) && usuarioAdd.getContra().equals(contra)) {
+                LoginCom = true;
+                if (usuarioAdd.getUsuario().startsWith("Admin")) {
+                    VerAd.setVisible(true);
+                    setVisible(false);
+                }
+                if (usuarioAdd.getUsuario().startsWith("Mesero")) {
+                    VerMe.setVisible(true);
+                    setVisible(false);
+                }
+                if (usuarioAdd.getUsuario().startsWith("Chef")) {
+                    VerCh.setVisible(true);
+                    setVisible(false);
+                }
+                break;
             }
         }
-        
-        if(LoginCom){
-        JOptionPane.showMessageDialog(null,"Inicio completado con exito");
+
+        if (LoginCom) {
+            JOptionPane.showMessageDialog(null, "Inicio completado con exito");
+        } else {
+            JOptionPane.showMessageDialog(null, "EL usuario no existe");
         }
-        else{
-        JOptionPane.showMessageDialog(null,"EL usuario no existe");
-        }
-        
-        
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
